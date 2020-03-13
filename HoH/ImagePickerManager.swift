@@ -26,8 +26,19 @@ class ImagePickerManager : NSObject, UIImagePickerControllerDelegate, UINavigati
         let chooseImage = UIAlertAction(title: "Camera roll", style: .default){
             UIAlertAction in self.openCameraRoll()
         }
+        
+        let takeImage = UIAlertAction(title: "Camera", style: .default){
+            UIAlertAction in self.openCamera()
+        }
+        
+        let cancelImage = UIAlertAction(title: "Cancel", style: .default){
+            UIAlertAction in
+        }
+        
         picker.delegate = self
         alert.addAction(chooseImage)
+        alert.addAction(takeImage)
+        alert.addAction(cancelImage)
         alert.popoverPresentationController?.sourceView = self.viewController!.view
         viewController.present(alert, animated: true, completion: nil)
     }
@@ -36,6 +47,17 @@ class ImagePickerManager : NSObject, UIImagePickerControllerDelegate, UINavigati
         alert.dismiss(animated: true, completion: nil)
         picker.sourceType = .photoLibrary
         self.viewController!.present(picker, animated: true, completion: nil)
+    }
+    
+    func openCamera(){
+        alert.dismiss(animated: true, completion: nil)
+        if UIImagePickerController .isSourceTypeAvailable(.camera){
+            picker.sourceType = .camera
+            self.viewController!.present(picker, animated: true, completion: nil)
+        } else{
+            let alertWarn = UIAlertView(title: "Warning", message: "Could not open camera", delegate: nil, cancelButtonTitle: "Cancel")
+            alertWarn.show()
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
