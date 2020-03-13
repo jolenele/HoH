@@ -51,22 +51,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.present(alert, animated: true, completion: nil) }
     
     @IBAction func IBOulet_New_Post(_ sender: UIButton) {
-//        ImagePickerManager().pickImage(self){
-//            img in
-//            self.IBOulet_Image.image = img
-//            self.IBOutlet_Image_Text.text = String("Hello")
-//        }
-//            var imgArray = [String]()
-//            imgArray.append(String("Hello"))
-//        let buttonPosition = sender.convert(CGPoint.zero, to: self.IBOutlet_Image_View)
-//        let indexPath = self.IBOutlet_Image_View.indexPathForRow(at: buttonPosition)
-//        print("indexPath \(indexPath!)")
-//
-//        self.IBOutlet_Image_View.beginUpdates()
-//         IBOutlet_Image_View.insertRows(at: [IndexPath(row: imgArray.count-1, section: 0)], with: .automatic)
-//        self.IBOutlet_Image_View.insertRows(at: [indexPath!], with: .automatic)
-//        self.IBOutlet_Image_View.endUpdates()
-
     }
     
     
