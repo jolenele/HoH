@@ -28,10 +28,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         IBOutlet_Image_View.delegate = self
         IBOutlet_Image_View.dataSource = self
-        
-//        articleArray.insert(defaultArticle, at: 0)
-        articleArray.insert(received_article, at: 0)
-//        IBOutlet_Image_Text.text = received_article?.content
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,7 +79,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        self.present(alert, animated: true, completion: nil) }
     
     @IBAction func IBOulet_New_Post(_ sender: UIButton) {
+//        self.articleArray.insert(received_article!, at: 0)
     }
+    
     
     
     

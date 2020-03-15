@@ -34,6 +34,6 @@ class PostNewArticleController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextVC = segue.destination as! ViewController
 //        var new_article = Article(title: String(self.IBOutlet_Title_Upload.text!), content: String(self.IBOutlet_Content_Upload.text!), image: self.IBOutlet_Image_Upload.image)
-        nextVC.received_article = Article(title: String(self.IBOutlet_Title_Upload.text!), content: String(self.IBOutlet_Content_Upload.text!), image: self.IBOutlet_Image_Upload.image)
+        nextVC.articleArray.insert(Article(title: String(self.IBOutlet_Title_Upload.text!), content: String(self.IBOutlet_Content_Upload.text!), image: self.IBOutlet_Image_Upload.image)!, at: 0)
     }
 }
