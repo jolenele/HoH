@@ -37,9 +37,4 @@ class HoHUITests: XCTestCase {
     }
 
     // Func test refactor
-    func testRefactored() {
-        let app = XCUIApplication()
-        app.buttons["Sign In"].tap()
-        XCTAssert(app.staticTexts["Humans of Hue"].exists)
-    }
 }
