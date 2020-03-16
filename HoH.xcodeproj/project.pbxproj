@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EC4FD81241C8A6900DF3A53 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EC4FD80241C8A6900DF3A53 /* Login.xib */; };
+		1E404F0D241F039900B45169 /* HoHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404F0C241F039900B45169 /* HoHUITests.swift */; };
 		1EC4FD83241C8C6400DF3A53 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC4FD82241C8C6400DF3A53 /* DesignableView.swift */; };
 		A56EBE08241B27DD002CD118 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EBE07241B27DD002CD118 /* ImagePickerManager.swift */; };
 		A56EBE0E241C2786002CD118 /* PostNewArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EBE0D241C2786002CD118 /* PostNewArticleController.swift */; };
 		A56EBE10241C2CEA002CD118 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EBE0F241C2CEA002CD118 /* Article.swift */; };
-		A56EBE12241C99B0002CD118 /* gallery-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A56EBE11241C99B0002CD118 /* gallery-01.jpg */; };
 		A5CEFE26241B26D300E7F7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEFE25241B26D300E7F7D1 /* AppDelegate.swift */; };
 		A5CEFE28241B26D300E7F7D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEFE27241B26D300E7F7D1 /* ViewController.swift */; };
 		A5CEFE2B241B26D300E7F7D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CEFE29241B26D300E7F7D1 /* Main.storyboard */; };
@@ -20,7 +19,20 @@
 		A5CEFE30241B26D400E7F7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CEFE2E241B26D400E7F7D1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1E404F0F241F039900B45169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEFE1A241B26D300E7F7D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CEFE21241B26D300E7F7D1;
+			remoteInfo = HoH;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1E404F0A241F039900B45169 /* HoHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E404F0C241F039900B45169 /* HoHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoHUITests.swift; sourceTree = "<group>"; };
+		1E404F0E241F039900B45169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC4FD80241C8A6900DF3A53 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		1EC4FD82241C8C6400DF3A53 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		A56EBE07241B27DD002CD118 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
@@ -37,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E404F07241F039900B45169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5CEFE1F241B26D300E7F7D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E404F0B241F039900B45169 /* HoHUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E404F0C241F039900B45169 /* HoHUITests.swift */,
+				1E404F0E241F039900B45169 /* Info.plist */,
+			);
+			path = HoHUITests;
+			sourceTree = "<group>";
+		};
 		A5CEFE19241B26D300E7F7D1 = {
 			isa = PBXGroup;
 			children = (
 				A5CEFE24241B26D300E7F7D1 /* HoH */,
+				1E404F0B241F039900B45169 /* HoHUITests */,
 				A5CEFE23241B26D300E7F7D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A5CEFE22241B26D300E7F7D1 /* HoH.app */,
+				1E404F0A241F039900B45169 /* HoHUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +115,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E404F09241F039900B45169 /* HoHUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E404F13241F039900B45169 /* Build configuration list for PBXNativeTarget "HoHUITests" */;
+			buildPhases = (
+				1E404F06241F039900B45169 /* Sources */,
+				1E404F07241F039900B45169 /* Frameworks */,
+				1E404F08241F039900B45169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E404F10241F039900B45169 /* PBXTargetDependency */,
+			);
+			name = HoHUITests;
+			productName = HoHUITests;
+			productReference = 1E404F0A241F039900B45169 /* HoHUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A5CEFE21241B26D300E7F7D1 /* HoH */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5CEFE34241B26D400E7F7D1 /* Build configuration list for PBXNativeTarget "HoH" */;
@@ -108,10 +156,14 @@
 		A5CEFE1A241B26D300E7F7D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Jolene;
 				TargetAttributes = {
+					1E404F09241F039900B45169 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A5CEFE21241B26D300E7F7D1;
+					};
 					A5CEFE21241B26D300E7F7D1 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -131,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				A5CEFE21241B26D300E7F7D1 /* HoH */,
+				1E404F09241F039900B45169 /* HoHUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E404F08241F039900B45169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5CEFE20241B26D300E7F7D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,13 +203,20 @@
 				A5CEFE30241B26D400E7F7D1 /* LaunchScreen.storyboard in Resources */,
 				A5CEFE2D241B26D400E7F7D1 /* Assets.xcassets in Resources */,
 				A5CEFE2B241B26D300E7F7D1 /* Main.storyboard in Resources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E404F06241F039900B45169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E404F0D241F039900B45169 /* HoHUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5CEFE1E241B26D300E7F7D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +231,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E404F10241F039900B45169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CEFE21241B26D300E7F7D1 /* HoH */;
+			targetProxy = 1E404F0F241F039900B45169 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5CEFE29241B26D300E7F7D1 /* Main.storyboard */ = {
@@ -185,6 +260,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1E404F11241F039900B45169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HoHUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plus84.HoHUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoH;
+			};
+			name = Debug;
+		};
+		1E404F12241F039900B45169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HoHUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plus84.HoHUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HoH;
+			};
+			name = Release;
+		};
 		A5CEFE32241B26D400E7F7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +451,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E404F13241F039900B45169 /* Build configuration list for PBXNativeTarget "HoHUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E404F11241F039900B45169 /* Debug */,
+				1E404F12241F039900B45169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A5CEFE1D241B26D300E7F7D1 /* Build configuration list for PBXProject "HoH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
