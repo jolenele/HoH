@@ -1,12 +1,8 @@
 language:
   - swift
 osx_image: xcode10.2
-xcode_project:
-  - HoH.xcodeproj
-xcode_scheme:
-  - HoHUITests.xctest
-xcode_destination:
-  - platform=iOS Simulator, OS=13.2, name=iPhone 11
+script:
+  - xcodebuild -scheme HoH -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=13.2' build test
 after_success:
   - echo "Yayy! you got it"
 notifications:
