@@ -503,6 +503,7 @@
     </scenes>
     <resources>
         <image name="Header" width="375" height="128"/>
+        <image name="gallery-01.jpg" width="1500" height="844"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2Za-zd-agw"/>
