@@ -6,7 +6,7 @@ xcode_project:
 xcode_scheme:
   - HoHUITests.xctest
 xcode_destination:
-  - platform=iOS Simulattor, OS=13.2, name=iPhone 11
+  - platform=iOS Simulator, OS=13.2, name=iPhone 11
 after_success:
   - echo "Yayy! you got it"
 notifications:
