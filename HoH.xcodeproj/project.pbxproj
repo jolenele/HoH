@@ -33,7 +33,6 @@
 		1E404F0A241F039900B45169 /* HoHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E404F0C241F039900B45169 /* HoHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoHUITests.swift; sourceTree = "<group>"; };
 		1E404F0E241F039900B45169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EC4FD80241C8A6900DF3A53 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		1EC4FD82241C8C6400DF3A53 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		A56EBE07241B27DD002CD118 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		A56EBE0D241C2786002CD118 /* PostNewArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNewArticleController.swift; sourceTree = "<group>"; };
@@ -102,7 +101,6 @@
 				A5CEFE25241B26D300E7F7D1 /* AppDelegate.swift */,
 				A5CEFE27241B26D300E7F7D1 /* ViewController.swift */,
 				A5CEFE29241B26D300E7F7D1 /* Main.storyboard */,
-				1EC4FD80241C8A6900DF3A53 /* Login.xib */,
 				A5CEFE2C241B26D400E7F7D1 /* Assets.xcassets */,
 				A56EBE11241C99B0002CD118 /* gallery-01.jpg */,
 				A5CEFE2E241B26D400E7F7D1 /* LaunchScreen.storyboard */,
