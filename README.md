@@ -2,6 +2,14 @@
 
 # Human of Hue 
 
+
+### Thong update notes:
+1. Authentication database: Firebase
+2. How to run project
+- cd to project folder
+- pod install (to install dependancies)
+- run the .xcworkspace file 
+
 ## Team Members:
 Member | Student ID
 --- | ---
