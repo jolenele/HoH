@@ -2,7 +2,7 @@ language: swift
 osx_image: xcode10.2
 xcode_workspace: HoH.xcworkspace
 xcode_scheme: HoH
-xcode_destination: platform=iOS Simulator, OS=13.2, name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone X
 before_install:
 - pod install
 notifications:
