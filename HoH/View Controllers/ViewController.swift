@@ -9,10 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let mainArray = ["Shuttle bus", "Hierarchy", "Exchange", "Padlock"]
-    let detailArray = ["6am - 10pm", "Acme corporation", "Ideas worth sharing", "Access denied"]
-    let imageArray = ["shuttle.png", "hierarchy.png", "exchange. png", "padlock.png"]
-    
     @IBOutlet weak var IBOutlet_Image_View: UITableView!
     @IBOutlet weak var IBOulet_Image: UIImageView!
     @IBOutlet weak var IBOutlet_Image_Text: UITextView!
@@ -20,7 +16,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var articleArray = [Article]()
     let cellID = "cellID"
     var received_article = Article(title: "", content: "", image: nil)
-    var defaultArticle = Article(title: "Hello World", content: "Loru", image: UIImage(named: "gallery-01.jpg"))
     
     
     
