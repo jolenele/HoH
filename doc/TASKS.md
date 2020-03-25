@@ -1,5 +1,5 @@
-# # Tasks/ Concerns/ Discussion Topics:
+# Tasks/ Concerns/ Discussion Topics:
 
-1. Signup page: Invalid Credentials Notifications
+1. Sign-up page: Invalid Credentials Notifications
 2. Sign-in Page: Error 
 3. Dashboard Storyboard
