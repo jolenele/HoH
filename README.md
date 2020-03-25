@@ -10,6 +10,8 @@
 - pod install (to install dependancies)
 - run the .xcworkspace file 
 
+Note: using Xcode 11 
+
 ## Team Members:
 Member | Student ID
 --- | ---
