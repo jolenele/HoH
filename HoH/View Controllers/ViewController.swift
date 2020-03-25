@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let mainArray = ["Shuttle bus", "Hierarchy", "Exchange", "Padlock"]
@@ -82,6 +83,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        self.articleArray.insert(received_article!, at: 0)
     }
     
+    @IBAction func logoutTapped(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
     
     
     

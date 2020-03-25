@@ -12,9 +12,12 @@ target 'HoH' do
   pod 'Firebase/Auth'	
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+end
 
   target 'HoHUITests' do
     # Pods for testing
-  end
-
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Core'
+    pod 'Firebase/Firestore'
 end

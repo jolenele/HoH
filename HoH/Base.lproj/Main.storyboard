@@ -10,29 +10,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashboard View Controller-->
-        <scene sceneID="Q2A-20-8n7">
+        <!--Test View Controller-->
+        <scene sceneID="A3b-zx-FVZ">
             <objects>
-                <viewController storyboardIdentifier="DashboardVC" id="EcA-R7-97v" customClass="DashboardViewController" customModule="HoH" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F1f-Pq-upH">
+                <viewController storyboardIdentifier="TestVC" id="708-cK-1Yp" customClass="TestViewController" customModule="HoH" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dDF-ug-IvH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-83-ALl">
-                                <rect key="frame" x="169" y="333" width="76" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKe-By-QOh">
+                                <rect key="frame" x="169" y="283" width="76" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuk-0L-e9n">
+                                <rect key="frame" x="183" y="339" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="708-cK-1Yp" eventType="touchUpInside" id="BLu-XA-AuB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHg-up-r9z">
+                                <rect key="frame" x="191" y="397" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vp1-jo-Eh1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="rbr-2T-MqG"/>
+                        <viewLayoutGuide key="safeArea" id="sgd-3n-yTJ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0MD-4Z-E2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uD2-3S-n6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="143"/>
+            <point key="canvasLocation" x="243" y="137"/>
         </scene>
         <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -62,9 +78,12 @@
                                                     <constraint firstAttribute="width" constant="200" id="ou8-v2-15O"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <state key="normal" title="Login">
+                                                <state key="normal" title="Logout">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="logoutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fam-Tf-AYX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -116,11 +135,12 @@
                         <outlet property="IBOulet_Image" destination="XhE-jd-TKL" id="ANm-Eh-ZK9"/>
                         <outlet property="IBOutlet_Image_Text" destination="9eZ-ZW-f7l" id="cXg-K1-RVO"/>
                         <outlet property="IBOutlet_Image_View" destination="bp6-bw-17q" id="WIo-5E-l7Z"/>
+                        <outlet property="btnLogout" destination="1li-Ey-qQW" id="Vxk-zB-Rzf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="137"/>
+            <point key="canvasLocation" x="1019" y="134"/>
         </scene>
         <!--AddPost-->
         <scene sceneID="yUm-Tw-QfE">
@@ -343,8 +363,8 @@
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="4Xy-QM-Tvh">
                                         <rect key="frame" x="16" y="513.33333333333337" width="382" height="150.66666666666663"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-04-Cnm">
-                                                <rect key="frame" x="0.0" y="8" width="382" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-04-Cnm">
+                                                <rect key="frame" x="0.0" y="8" width="382" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -397,7 +417,7 @@
         <!--Login-->
         <scene sceneID="Iga-B7-41j">
             <objects>
-                <viewController title="Login" id="bOe-jS-pPu" customClass="LoginViewController" customModule="HoH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="Login" id="bOe-jS-pPu" customClass="LoginViewController" customModule="HoH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kQO-Xg-eId">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,8 +557,8 @@
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="wbx-yr-TQD">
                                         <rect key="frame" x="0.0" y="508.66666666666657" width="414" height="155.33333333333331"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNz-TQ-FRz">
-                                                <rect key="frame" x="0.0" y="-7" width="414" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNz-TQ-FRz">
+                                                <rect key="frame" x="0.0" y="-9.0000000000000568" width="414" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -577,6 +597,6 @@
         <image name="gallery-01.jpg" width="1500" height="844"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xaw-fP-lQQ"/>
+        <segue reference="Vp1-jo-Eh1"/>
     </inferredMetricsTieBreakers>
 </document>

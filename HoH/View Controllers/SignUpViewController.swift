@@ -118,9 +118,8 @@ class SignUpViewController: UIViewController {
         lblError.alpha = 1
     }
     func transitionToHome() {
-        let dashboardViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.dashboardViewController) as? DashboardViewController
-        
-        view.window?.rootViewController = dashboardViewController
+        let testViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.testViewController) as? TestViewController
+        view.window?.rootViewController = testViewController
         view.window?.makeKeyAndVisible()
         
     }

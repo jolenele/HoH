@@ -7,8 +7,9 @@
 1. Authentication database: Firebase
 2. How to run project
 - cd to project folder
-- pod install (to install dependancies)
-- run the .xcworkspace file 
+- pod install (to install dependencies)
+- run the .xcworkspace file
+- Sorry Nga, but it still works on Xcode 10.2 (my bad) 
 
 ## Team Members:
 Member | Student ID
