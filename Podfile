@@ -15,8 +15,4 @@ end
 
   target 'HoHUITests' do
     # Pods for testing
-    pod 'Firebase/Analytics'
-    pod 'Firebase/Auth'
-    pod 'Firebase/Core'
-    pod 'Firebase/Firestore'
 end
