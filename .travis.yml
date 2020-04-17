@@ -1,9 +1,9 @@
-language:
-  - swift
+language: swift
 osx_image: xcode10.2
-script:
-  - xcodebuild -scheme HoH -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' build test
-after_success:
-  - echo "Yayy! you got it"
+xcode_workspace: HoH.xcworkspace
+xcode_scheme: HoH
+xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone X
+before_install:
+- pod install
 notifications:
   slack: ios-w2020:cZHofGIRD3mbahg1SM4S1kkp

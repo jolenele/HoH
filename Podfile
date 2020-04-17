@@ -1,10 +1,9 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '12.2'
+# platform :ios, '13.2'
 
 target 'HoH' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
   # Pods for HoH
   # add the Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
@@ -12,9 +11,8 @@ target 'HoH' do
   pod 'Firebase/Auth'	
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+end
 
   target 'HoHUITests' do
     # Pods for testing
-  end
-
 end

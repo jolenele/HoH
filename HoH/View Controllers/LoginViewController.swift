@@ -86,9 +86,8 @@ class LoginViewController: UIViewController {
                 }
                 else {
                     
-                    let dashboardViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.dashboardViewController) as? DashboardViewController
-                    
-                    self.view.window?.rootViewController = dashboardViewController
+                    let testViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.testViewController) as? TestViewController
+                    self.view.window?.rootViewController = testViewController
                     self.view.window?.makeKeyAndVisible()
                 }
             }
